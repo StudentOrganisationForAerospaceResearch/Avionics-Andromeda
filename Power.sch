@@ -1,0 +1,897 @@
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:AndromedaV1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "SOAR Avionics Development Board"
+Date "2017-12-03"
+Rev "1"
+Comp "SOAR"
+Comment1 "Andromeda"
+Comment2 "Garnet Tanner"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_MINIB J1
+U 1 1 59D08BBE
+P 1875 3175
+F 0 "J1" H 1675 3625 50  0000 L CNN
+F 1 "USB_MINIB" H 1675 3525 50  0000 L CNN
+F 2 "SOAR:USB-Mini-B" H 2025 3125 50  0001 C CNN
+F 3 "http://files.edac.net/690-005-299-043.pdf" H 2025 3125 50  0001 C CNN
+F 4 "690-005-299-043" H 1875 3175 60  0001 C CNN "Digikey"
+	1    1875 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 59D08BCB
+P 4700 1850
+F 0 "C4" H 4725 1950 50  0000 L CNN
+F 1 "10uF" H 4725 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 1700 50  0001 C CNN
+F 3 "" H 4700 1850 50  0001 C CNN
+	1    4700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 59D08BD2
+P 5050 1850
+F 0 "C5" H 5075 1950 50  0000 L CNN
+F 1 "0.1uF" H 5075 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 1700 50  0001 C CNN
+F 3 "" H 5050 1850 50  0001 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 59D08BDF
+P 5050 2000
+F 0 "#PWR01" H 5050 1750 50  0001 C CNN
+F 1 "GND" H 5050 1850 50  0000 C CNN
+F 2 "" H 5050 2000 50  0001 C CNN
+F 3 "" H 5050 2000 50  0001 C CNN
+	1    5050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 59D08BE5
+P 1825 3625
+F 0 "#PWR02" H 1825 3375 50  0001 C CNN
+F 1 "GND" H 1825 3475 50  0000 C CNN
+F 2 "" H 1825 3625 50  0001 C CNN
+F 3 "" H 1825 3625 50  0001 C CNN
+	1    1825 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59D08BEB
+P 4225 4075
+F 0 "#PWR03" H 4225 3825 50  0001 C CNN
+F 1 "GND" H 4225 3925 50  0000 C CNN
+F 2 "" H 4225 4075 50  0001 C CNN
+F 3 "" H 4225 4075 50  0001 C CNN
+	1    4225 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 59D08BF3
+P 5925 3025
+F 0 "D1" H 5925 3125 50  0000 C CNN
+F 1 "Green" H 5925 2925 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5925 3025 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 5925 3025 50  0001 C CNN
+F 4 "LG R971-KN-1" H 5925 3025 60  0001 C CNN "Digikey"
+	1    5925 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 59D08C01
+P 5925 2625
+F 0 "R3" V 6005 2625 50  0000 C CNN
+F 1 "330" V 5925 2625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 2625 50  0001 C CNN
+F 3 "" H 5925 2625 50  0001 C CNN
+	1    5925 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 59D08C08
+P 6275 2625
+F 0 "R4" V 6355 2625 50  0000 C CNN
+F 1 "330" V 6275 2625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6205 2625 50  0001 C CNN
+F 3 "" H 6275 2625 50  0001 C CNN
+	1    6275 2625
+	-1   0    0    1   
+$EndComp
+Text Notes 3375 3700 0    39   ~ 0
+Reset left \ndisconnected\n
+Text Label 5325 3375 0    60   ~ 0
+TX_LED
+Text Label 5325 3475 0    60   ~ 0
+RX_LED
+$Comp
+L C C6
+U 1 1 59D09A37
+P 7875 3525
+F 0 "C6" H 7900 3625 50  0000 L CNN
+F 1 "2.2uF" H 7900 3425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7913 3375 50  0001 C CNN
+F 3 "" H 7875 3525 50  0001 C CNN
+	1    7875 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 59D09A45
+P 9075 3525
+F 0 "C8" H 9100 3625 50  0000 L CNN
+F 1 "2.2uF" H 9100 3425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9113 3375 50  0001 C CNN
+F 3 "" H 9075 3525 50  0001 C CNN
+	1    9075 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 59D09A57
+P 9075 2925
+F 0 "#PWR04" H 9075 2775 50  0001 C CNN
+F 1 "+3.3V" H 9075 3065 50  0000 C CNN
+F 2 "" H 9075 2925 50  0001 C CNN
+F 3 "" H 9075 2925 50  0001 C CNN
+	1    9075 2925
+	1    0    0    -1  
+$EndComp
+Text Notes 8175 2925 0    39   ~ 0
+Output Max 300mA
+$Comp
+L D_Schottky_x2_KCom_AAK D3
+U 1 1 59D09D50
+P 6975 3225
+F 0 "D3" H 7025 3125 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK" H 6975 3325 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6975 3225 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG2005CT.pdf" H 6975 3225 50  0001 C CNN
+F 4 "1727-5188-1-ND" H 6975 3225 60  0001 C CNN "Digikey"
+	1    6975 3225
+	1    0    0    1   
+$EndComp
+Text Label 6675 3225 2    60   ~ 0
+VBUS
+Text GLabel 7275 3225 2    60   Input ~ 0
+VEXT
+$Comp
+L VBUS #PWR05
+U 1 1 59D0C215
+P 4700 1700
+F 0 "#PWR05" H 4700 1550 50  0001 C CNN
+F 1 "VBUS" H 4700 1850 50  0000 C CNN
+F 2 "" H 4700 1700 50  0001 C CNN
+F 3 "" H 4700 1700 50  0001 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 5275 2875 2    60   Input ~ 0
+UART1_RX
+Text GLabel 5275 2975 2    60   Input ~ 0
+UART1_TX
+$Comp
+L VDC #PWR06
+U 1 1 59D065A5
+P 6975 2925
+F 0 "#PWR06" H 6975 2825 50  0001 C CNN
+F 1 "VDC" H 6975 3175 50  0000 C CNN
+F 2 "" H 6975 2925 50  0001 C CNN
+F 3 "" H 6975 2925 50  0001 C CNN
+	1    6975 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDC #PWR07
+U 1 1 59D065DD
+P 7875 2875
+F 0 "#PWR07" H 7875 2775 50  0001 C CNN
+F 1 "VDC" H 7875 3125 50  0000 C CNN
+F 2 "" H 7875 2875 50  0001 C CNN
+F 3 "" H 7875 2875 50  0001 C CNN
+	1    7875 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L FT230XS U1
+U 1 1 59E242CE
+P 4325 3275
+F 0 "U1" H 3775 3875 50  0000 L CNN
+F 1 "FT230XS" H 4625 3875 50  0000 L CNN
+F 2 "Package_SSOP:SSOP-16_3.9x4.9mm_P0.635mm" H 4325 3275 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 4325 3275 50  0001 C CNN
+F 4 "768-1135-1-ND" H 4325 3275 60  0001 C CNN "Digikey"
+	1    4325 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 59D08BFA
+P 6275 3025
+F 0 "D2" H 6275 3125 50  0000 C CNN
+F 1 "Red" H 6275 2925 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6275 3025 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic8/00078896_0.pdf" H 6275 3025 50  0001 C CNN
+F 4 "475-1278-1-ND" H 6275 3025 60  0001 C CNN "Digikey"
+	1    6275 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59E25BEB
+P 3225 3075
+F 0 "R1" V 3305 3075 50  0000 C CNN
+F 1 "27" V 3225 3075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3155 3075 50  0001 C CNN
+F 3 "" H 3225 3075 50  0001 C CNN
+	1    3225 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59E25E2D
+P 3225 3425
+F 0 "R2" V 3305 3425 50  0000 C CNN
+F 1 "27" V 3225 3425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3155 3425 50  0001 C CNN
+F 3 "" H 3225 3425 50  0001 C CNN
+	1    3225 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 59E26672
+P 2850 3600
+F 0 "C2" H 2875 3700 50  0000 L CNN
+F 1 "47pF" H 2875 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 3450 50  0001 C CNN
+F 3 "" H 2850 3600 50  0001 C CNN
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59E266CE
+P 2575 3800
+F 0 "#PWR08" H 2575 3550 50  0001 C CNN
+F 1 "GND" H 2575 3650 50  0000 C CNN
+F 2 "" H 2575 3800 50  0001 C CNN
+F 3 "" H 2575 3800 50  0001 C CNN
+	1    2575 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 59E265D7
+P 2575 3600
+F 0 "C1" H 2600 3700 50  0000 L CNN
+F 1 "47pF" H 2600 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2613 3450 50  0001 C CNN
+F 3 "" H 2575 3600 50  0001 C CNN
+	1    2575 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 59E2703F
+P 2975 2375
+F 0 "C3" H 3000 2475 50  0000 L CNN
+F 1 "10nF" H 3000 2275 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3013 2225 50  0001 C CNN
+F 3 "" H 2975 2375 50  0001 C CNN
+	1    2975 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 59ED10AA
+P 10025 3225
+F 0 "D4" H 10025 3325 50  0000 C CNN
+F 1 "Green" H 10025 3125 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 10025 3225 50  0001 C CNN
+F 3 "" H 10025 3225 50  0001 C CNN
+F 4 "LG R971-KN-1" H 10025 3225 60  0001 C CNN "Digikey"
+	1    10025 3225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR09
+U 1 1 59ED121D
+P 10025 2850
+F 0 "#PWR09" H 10025 2700 50  0001 C CNN
+F 1 "+3.3V" H 10025 2990 50  0000 C CNN
+F 2 "" H 10025 2850 50  0001 C CNN
+F 3 "" H 10025 2850 50  0001 C CNN
+	1    10025 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 59ED12AD
+P 10025 3800
+F 0 "#PWR010" H 10025 3550 50  0001 C CNN
+F 1 "GND" H 10025 3650 50  0000 C CNN
+F 2 "" H 10025 3800 50  0001 C CNN
+F 3 "" H 10025 3800 50  0001 C CNN
+	1    10025 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 59ED12E5
+P 10025 3575
+F 0 "R5" V 10105 3575 50  0000 C CNN
+F 1 "330" V 10025 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9955 3575 50  0001 C CNN
+F 3 "" H 10025 3575 50  0001 C CNN
+	1    10025 3575
+	1    0    0    -1  
+$EndComp
+Text Notes 10250 3250 0    39   ~ 0
+Power ON LED
+$Comp
+L AP2210-3.3 U2
+U 1 1 59EC61F7
+P 8475 3225
+F 0 "U2" H 8275 3350 50  0000 L CNN
+F 1 "AP2210-3.3" H 8475 3350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8475 3450 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2210.pdf" H 8475 3225 50  0001 C CNN
+F 4 "AP2210N-3.3TRG1" H 8475 3225 60  0001 C CNN "Digikey"
+	1    8475 3225
+	1    0    0    -1  
+$EndComp
+Text Notes 5825 2075 0    39   ~ 0
+LED current: 5mA\nIndicates data transfer
+Text Notes 3925 4475 0    39   ~ 0
+The FTDI chip converts UART\ncommunication to USB
+Text Notes 6775 3650 0    39   ~ 0
+Power ORing circuit\n\nVBUS: USB\nVEXT: External Input
+$Comp
+L Ferrite_Bead L1
+U 1 1 5A1B2A57
+P 3525 2175
+F 0 "L1" V 3375 2200 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3675 2175 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 3455 2175 50  0001 C CNN
+F 3 "" H 3525 2175 50  0001 C CNN
+F 4 "732-1593-1-ND" V 3525 2175 60  0001 C CNN "Digikey"
+	1    3525 2175
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5A1B301A
+P 2975 2525
+F 0 "#PWR011" H 2975 2275 50  0001 C CNN
+F 1 "GND" H 2975 2375 50  0000 C CNN
+F 2 "" H 2975 2525 50  0001 C CNN
+F 3 "" H 2975 2525 50  0001 C CNN
+	1    2975 2525
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3625 3475
+NoConn ~ 5025 3075
+NoConn ~ 5025 3175
+NoConn ~ 5025 3575
+NoConn ~ 5025 3675
+Wire Wire Line
+	6275 2475 6275 2475
+Wire Wire Line
+	1775 3575 1875 3575
+Wire Wire Line
+	5025 3475 6275 3475
+Wire Wire Line
+	5025 3375 5925 3375
+Wire Wire Line
+	5025 2975 5275 2975
+Wire Wire Line
+	5025 2875 5275 2875
+Connection ~ 1825 3575
+Wire Wire Line
+	1825 3625 1825 3575
+Wire Wire Line
+	4225 4075 4225 3975
+Wire Wire Line
+	2625 2975 2625 2175
+Wire Wire Line
+	2175 2975 2625 2975
+Connection ~ 4225 2175
+Wire Wire Line
+	7875 3875 9075 3875
+Connection ~ 9075 3225
+Wire Wire Line
+	9075 2925 9075 3375
+Wire Wire Line
+	7875 2875 7875 3375
+Connection ~ 8475 3875
+Wire Wire Line
+	7875 3675 7875 3875
+Wire Wire Line
+	8775 3225 9075 3225
+Wire Wire Line
+	7875 3225 8175 3225
+Connection ~ 7875 3225
+Wire Wire Line
+	9075 3875 9075 3675
+Wire Wire Line
+	3625 2475 3625 2875
+Wire Wire Line
+	3625 3425 3625 3275
+Wire Wire Line
+	4225 3975 4425 3975
+Wire Wire Line
+	4425 2575 4425 2475
+Wire Wire Line
+	5925 2775 5925 2875
+Wire Wire Line
+	6275 2775 6275 2875
+Wire Wire Line
+	6275 3475 6275 3175
+Wire Wire Line
+	5925 3375 5925 3175
+Wire Wire Line
+	5925 2375 6275 2375
+Wire Wire Line
+	5925 2375 5925 2475
+Wire Wire Line
+	6275 2375 6275 2475
+Wire Wire Line
+	2175 3175 2375 3175
+Wire Wire Line
+	2375 3175 2375 3425
+Wire Wire Line
+	2175 3275 2425 3275
+Wire Wire Line
+	2425 3275 2425 3075
+Wire Wire Line
+	3625 3075 3625 3175
+Wire Wire Line
+	2850 3750 2575 3750
+Connection ~ 2575 3750
+Wire Wire Line
+	2575 3750 2575 3800
+Wire Wire Line
+	6975 2925 6975 3025
+Wire Wire Line
+	10025 2850 10025 3075
+Wire Wire Line
+	10025 3725 10025 3800
+Wire Wire Line
+	10025 3375 10025 3425
+Wire Wire Line
+	2975 2175 2975 2225
+Connection ~ 2975 2175
+Wire Wire Line
+	2625 2175 3375 2175
+Wire Wire Line
+	3675 2175 4225 2175
+Wire Wire Line
+	3625 3075 3375 3075
+Wire Wire Line
+	2425 3075 3075 3075
+Wire Wire Line
+	2375 3425 3075 3425
+Wire Wire Line
+	3375 3425 3625 3425
+Wire Wire Line
+	2575 3450 2575 3075
+Connection ~ 2575 3075
+Wire Wire Line
+	2850 3450 2850 3425
+Connection ~ 2850 3425
+Wire Wire Line
+	4700 2000 5050 2000
+Wire Wire Line
+	4700 1700 5050 1700
+Text Notes 1125 2625 0    39   ~ 0
+Micro USB connector\nUsed for power (5V) and data \ntransfer to a PC serial monitor
+Text Notes 2525 1850 0    39   ~ 0
+Reference data sheet for\nwiring notes
+Text Notes 3175 1950 0    39   ~ 0
+Ferrite for noise filtering
+Text Notes 4600 1425 0    39   ~ 0
+FTDI decoupling
+$Comp
+L +3.3V #PWR012
+U 1 1 5A1B6823
+P 6125 2350
+F 0 "#PWR012" H 6125 2200 50  0001 C CNN
+F 1 "+3.3V" H 6125 2490 50  0000 C CNN
+F 2 "" H 6125 2350 50  0001 C CNN
+F 3 "" H 6125 2350 50  0001 C CNN
+	1    6125 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2725 5100 2    60   Input ~ 0
+VEXT
+$Comp
+L Q_NMOS_GSD Q1
+U 1 1 5A1BB20E
+P 3175 5400
+F 0 "Q1" H 3375 5450 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3375 5350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3375 5500 50  0001 C CNN
+F 3 "ILRML6401" H 3175 5400 50  0001 C CNN
+F 4 "DMN3023L-7DICT-ND" H 3175 5400 60  0001 C CNN "Digikey"
+	1    3175 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Barrel_Jack J2
+U 1 1 5A1BB215
+P 2150 5200
+F 0 "J2" H 2150 5410 50  0000 C CNN
+F 1 "Barrel_Jack" H 2150 5025 50  0000 C CNN
+F 2 "SOAR:CUI_PJ-102A" H 2200 5160 50  0001 C CNN
+F 3 "http://www.cui.com/product/resource/pj-102a.pdf" H 2200 5160 50  0001 C CNN
+F 4 "CP-102A-ND" H 2150 5200 60  0001 C CNN "Digikey"
+	1    2150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5300 2975 5300
+Wire Wire Line
+	2450 5100 2725 5100
+Wire Wire Line
+	2575 5100 2575 5600
+Wire Wire Line
+	2575 5600 3175 5600
+Wire Wire Line
+	3500 5300 3375 5300
+Connection ~ 2450 5300
+Text Notes 2800 5700 0    39   ~ 0
+Reverse polarity protection
+Text Notes 2025 4900 0    39   ~ 0
+2.1 mm DC Jack
+Text Notes 2975 6800 0    39   ~ 0
+3.3V and 5V out
+Text Notes 2450 4575 0    79   ~ 0
+External Power\n3.5V - 12V
+Text Notes 2925 1050 0    79   ~ 0
+USB Power
+Text Notes 8050 2500 0    79   ~ 0
+3.3V Regulation
+$Comp
+L LM3480-5.0 U3
+U 1 1 5A1BCA16
+P 8500 5175
+F 0 "U3" H 8350 5300 50  0000 C CNN
+F 1 "LM3480-5.0" H 8325 5400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 5400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8500 5175 50  0001 C CNN
+F 4 "LM3480IM3X-5.0/NOPBCT-ND" H 8500 5175 60  0001 C CNN "Digikey"
+	1    8500 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5A1BCB5D
+P 7975 5475
+F 0 "C7" H 8000 5575 50  0000 L CNN
+F 1 "1uF" H 8000 5375 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8013 5325 50  0001 C CNN
+F 3 "" H 7975 5475 50  0001 C CNN
+	1    7975 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 5A1BCCFF
+P 9150 5475
+F 0 "C9" H 9175 5575 50  0000 L CNN
+F 1 "1uF" H 9175 5375 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9188 5325 50  0001 C CNN
+F 3 "" H 9150 5475 50  0001 C CNN
+	1    9150 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5175 7975 5175
+Wire Wire Line
+	7975 4875 7975 5325
+Wire Wire Line
+	8800 5175 9150 5175
+Wire Wire Line
+	9150 4825 9150 5325
+Wire Wire Line
+	7975 5725 9150 5725
+Wire Wire Line
+	8500 5475 8500 5725
+Connection ~ 8500 5725
+Wire Wire Line
+	8475 3525 8475 3975
+$Comp
+L GND #PWR013
+U 1 1 5A1BD31A
+P 8475 3975
+F 0 "#PWR013" H 8475 3725 50  0001 C CNN
+F 1 "GND" H 8475 3825 50  0000 C CNN
+F 2 "" H 8475 3975 50  0001 C CNN
+F 3 "" H 8475 3975 50  0001 C CNN
+	1    8475 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5A1BD3A7
+P 8500 5725
+F 0 "#PWR014" H 8500 5475 50  0001 C CNN
+F 1 "GND" H 8500 5575 50  0000 C CNN
+F 2 "" H 8500 5725 50  0001 C CNN
+F 3 "" H 8500 5725 50  0001 C CNN
+	1    8500 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 5A1BD624
+P 9150 4825
+F 0 "#PWR015" H 9150 4675 50  0001 C CNN
+F 1 "+5V" H 9150 4965 50  0000 C CNN
+F 2 "" H 9150 4825 50  0001 C CNN
+F 3 "" H 9150 4825 50  0001 C CNN
+	1    9150 4825
+	1    0    0    -1  
+$EndComp
+Connection ~ 9150 5175
+$Comp
+L VDC #PWR016
+U 1 1 5A1BD9FF
+P 7975 4875
+F 0 "#PWR016" H 7975 4775 50  0001 C CNN
+F 1 "VDC" H 7975 5125 50  0000 C CNN
+F 2 "" H 7975 4875 50  0001 C CNN
+F 3 "" H 7975 4875 50  0001 C CNN
+	1    7975 4875
+	1    0    0    -1  
+$EndComp
+Connection ~ 7975 5175
+Text Notes 8050 4550 0    39   ~ 0
+Output Max 100mA\nNot used currently in design
+Wire Wire Line
+	7975 5625 7975 5725
+Wire Wire Line
+	9150 5725 9150 5625
+Text Notes 8000 4275 0    79   ~ 0
+5V Regulation
+Wire Wire Line
+	4425 2475 3625 2475
+$Comp
+L VBUS #PWR017
+U 1 1 5A221E30
+P 4225 2050
+F 0 "#PWR017" H 4225 1900 50  0001 C CNN
+F 1 "VBUS" H 4225 2200 50  0000 C CNN
+F 2 "" H 4225 2050 50  0001 C CNN
+F 3 "" H 4225 2050 50  0001 C CNN
+	1    4225 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 2050 4225 2575
+Wire Wire Line
+	2450 5200 2450 5300
+Connection ~ 2575 5100
+$Comp
+L GND #PWR018
+U 1 1 5A222A39
+P 3500 5300
+F 0 "#PWR018" H 3500 5050 50  0001 C CNN
+F 1 "GND" H 3500 5150 50  0000 C CNN
+F 2 "" H 3500 5300 50  0001 C CNN
+F 3 "" H 3500 5300 50  0001 C CNN
+	1    3500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 2350 6125 2375
+Connection ~ 6125 2375
+$Comp
+L +3.3V #PWR019
+U 1 1 5A225CB7
+P 3300 6025
+F 0 "#PWR019" H 3300 5875 50  0001 C CNN
+F 1 "+3.3V" H 3300 6165 50  0000 C CNN
+F 2 "" H 3300 6025 50  0001 C CNN
+F 3 "" H 3300 6025 50  0001 C CNN
+	1    3300 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5A225CC4
+P 2475 6550
+F 0 "#PWR020" H 2475 6300 50  0001 C CNN
+F 1 "GND" H 2475 6400 50  0000 C CNN
+F 2 "" H 2475 6550 50  0001 C CNN
+F 3 "" H 2475 6550 50  0001 C CNN
+	1    2475 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6150 2850 6150
+Wire Wire Line
+	2850 6150 2850 6550
+Wire Wire Line
+	2650 6350 2850 6350
+Connection ~ 2850 6350
+Wire Wire Line
+	2650 6250 3300 6250
+Wire Wire Line
+	3300 6250 3300 6025
+Wire Wire Line
+	2650 6050 3025 6050
+Wire Wire Line
+	3025 6050 3025 6025
+$Comp
+L +5V #PWR021
+U 1 1 5A225CD2
+P 3025 6025
+F 0 "#PWR021" H 3025 5875 50  0001 C CNN
+F 1 "+5V" H 3025 6165 50  0000 C CNN
+F 2 "" H 3025 6025 50  0001 C CNN
+F 3 "" H 3025 6025 50  0001 C CNN
+	1    3025 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR022
+U 1 1 5A226776
+P 2000 6050
+F 0 "#PWR022" H 2000 5900 50  0001 C CNN
+F 1 "+5V" H 2000 6190 50  0000 C CNN
+F 2 "" H 2000 6050 50  0001 C CNN
+F 3 "" H 2000 6050 50  0001 C CNN
+	1    2000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR023
+U 1 1 5A2267CF
+P 1725 6050
+F 0 "#PWR023" H 1725 5900 50  0001 C CNN
+F 1 "+3.3V" H 1725 6190 50  0000 C CNN
+F 2 "" H 1725 6050 50  0001 C CNN
+F 3 "" H 1725 6050 50  0001 C CNN
+	1    1725 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6050 2150 6050
+Wire Wire Line
+	1725 6050 1725 6250
+Wire Wire Line
+	1725 6250 2150 6250
+Wire Wire Line
+	2150 6150 2150 6550
+Wire Wire Line
+	2150 6550 2850 6550
+Connection ~ 2150 6350
+Connection ~ 2475 6550
+$Comp
+L Conn_02x04_Odd_Even J3
+U 1 1 5A226FA5
+P 2350 6150
+F 0 "J3" H 2400 6350 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2400 5850 50  0000 C CNN
+F 2 "Conn_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2350 6150 50  0001 C CNN
+F 3 "" H 2350 6150 50  0001 C CNN
+	1    2350 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 7950 2050 0    60   ~ 12
+CAUTION!\nV1 Boards have incorrect footprint for 3.3V regulator. \nPIn 1 is VIN and Pin 3 is VOUT.\nBoard placement needs to be mirrored.
+$EndSCHEMATC

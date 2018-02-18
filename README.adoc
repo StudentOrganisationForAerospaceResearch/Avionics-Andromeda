@@ -1,0 +1,24 @@
+= Andromeda Sensor Development Board
+
+Andromeda is the development board for SOAR's 2018 competition avionics system.
+
+Hardware Designs are incremented by version.
+For example; *AndromedaV1* is version 1.
+
+The design files for each version are available along with pdf schematics,
+assembly drawings and gerber files.
+
+Each hardware version contains the following design files
+----
+
+* ___VX.pro - Kicad project
+* ___VX.sch - Kicad main schematic
+* ___VX.kicad_pcb - Kicad PCB design
+* ___.sch - several hierarchical schematic
+* ___V.net - Kicad netlist file
+* ___VX-cache.dcm - Kicad component description cache
+* ___VX-cache.lib - Kicad component library cache
+* ___VX-Schematic.pdf - PDF Schematic
+* ___VX-AssemblyDrawing.pdf PDF export of fabrication layer
+* Gerbers - Gerber files exported with protel extensions
+----
